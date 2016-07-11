@@ -15,9 +15,13 @@ Run TSK code
 ```matlab
 stringkernel_betaKMM('example.fasta',10,3,1000)
 ```
-(Format: stringkernel_betaKMM(FASTA format file, k parameter , m parameter , number of training samples)
+(stringkernel_betaKMM(FASTA format file, k parameter , m parameter , number of training samples)
 
->example.fasta consists of 2000 sequences 
+>example.fasta consists of 2000 sequences, with following format:
+```
+>chr1:465738-478736 (position)|-1 (label)   [header]
+TACGATCGATCGATCGATCGATCA.....ATCGCTCGAT (100bp length DNA sequences)
+```
 
 This will generate the following kernel files for input into SVM package SVMLight (commented code modifications available for LIBSVM format output in the code):
 
