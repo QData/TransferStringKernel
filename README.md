@@ -15,15 +15,17 @@ mex mexextractuniquena_int.c
 3. Run TSK code
 
 ```matlab
-stringkernel_betaKMM('example.fasta',10,3,500)
+stringkernel_betaKMM('example.fasta',10,3,1000)
 ```
+>example.fasta consists of 2000 sequences 
 
-(Format: stringkernel_betaKMM(FASTA format file, k parameter , m parametr , number of training samples)
+(Format: stringkernel_betaKMM(FASTA format file, k parameter , m parameter , number of training samples)
 
-4. This will generate the following kernel files:
+4. This will generate the following kernel files for input into SVM package SVMLight (commented code modifications available for LIBSVM format output in the code):
 
-+ example.fasta.10.3.500.TESTKERNEL.txt : Test Kernel file
-+ example.fasta.10.3.500.TRAINKERNEL.txt : Train Kernel file (Simple SK)
-+ example.fasta.10.3.500.WEIGHTTRAINKERNEL.txt : Train Kernel file with weights (TSK)
++ example.fasta.10.3.1000.TESTKERNEL.txt : Test Kernel file
++ example.fasta.10.3.1000.TRAINKERNEL.txt : Train Kernel file (Simple SK)
++ example.fasta.10.3.1000.WEIGHTTRAINKERNEL.txt : Train Kernel file with weights (TSK)
++ example.fasta.LABELS.txt : File containing true labels for the testing
 
 
