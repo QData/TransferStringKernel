@@ -1,4 +1,4 @@
-#### Transfer String Kernel for Cross-Context Transcription Factor Binding Site (TFBS) Prediction 
+### Transfer String Kernel for Cross-Context Transcription Factor Binding Site (TFBS) Prediction 
 
 Running the Matlab Code:
 
@@ -32,3 +32,20 @@ example.fasta.10.3.1000.WEIGHTTRAINKERNEL.txt : Train Kernel file with weights (
 example.fasta.LABELS.txt : File containing true labels for the testing
 ```
 
+***
+
+#### Running SVM Classifier
+
+We use the [SVMLight package](http://svmlight.joachims.org/) for implementing SVM classifier for TSK :
+
+Once the kernel files are generated, use following commands to train/test the svm
+>Note: These are just example commands, hyperparameter tuning of C parameter (-c) maybe be required to choose the best value.
+
+Training:
+```
+svm_learn -c 1 example.fasta.10.3.1000.WEIGHTTRAINKERNEL.txt model.tmp
+```
+Classification:
+```
+svm_classify -f 1 example.fasta.10.3.1000.TESTKERNEL.txt model.tmp example.fasta.10.3.1000.WEIGHTPRED.txt
+```
