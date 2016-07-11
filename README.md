@@ -17,7 +17,7 @@ stringkernel_betaKMM('example.fasta',10,3,1000)
 ```
 (stringkernel_betaKMM(FASTA format file, k parameter , m parameter , number of training samples)
 
->example.fasta consists of 2000 sequences, with following format:
+>Note: example.fasta consists of 2000 sequences, with following format:
 ```
 >chr1:465738-478736 (position)|-1 (label)   [header]
 TACGATCGATCGATCGATCGATCA.....ATCGCTCGAT (100bp length DNA sequences)
@@ -49,3 +49,5 @@ Classification:
 ```
 svm_classify -f 1 example.fasta.10.3.1000.TESTKERNEL.txt model.tmp example.fasta.10.3.1000.WEIGHTPRED.txt
 ```
+
+>Note: stringKernel_betaKMM.m also contains (commented) code to print out kernels in format for [LIBSVM](https://www.csie.ntu.edu.tw/~cjlin/libsvm/) package.
