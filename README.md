@@ -21,8 +21,9 @@ stringkernel_betaKMM('example.fasta',10,3,500)
 (Format: stringkernel_betaKMM(FASTA format file, k parameter , m parametr , number of training samples)
 
 4. This will generate the following kernel files:
-..* example.fatsa.10.3.500.TESTKERNEL.txt : Test Kernel file
-..* example.fasta.10.3.500.TRAINKERNEL.txt : Train Kernel file (Simple SK)
-..* example.fasta.10.3.500.WEIGHTTRAINKERNEL.txt : Train Kernel file with weights (TSK)
+
++ example.fasta.10.3.500.TESTKERNEL.txt : Test Kernel file
++ example.fasta.10.3.500.TRAINKERNEL.txt : Train Kernel file (Simple SK)
++ example.fasta.10.3.500.WEIGHTTRAINKERNEL.txt : Train Kernel file with weights (TSK)
 
 
