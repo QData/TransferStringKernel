@@ -1,4 +1,4 @@
-### Transfer String Kernel for Cross-Context Transcription Factor Binding Site (TFBS) Prediction 
+### Transfer String Kernel for Cross-Context DNA-Protein Binding Prediction 
 
 Running the Matlab Code:
 
