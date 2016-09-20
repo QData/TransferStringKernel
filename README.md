@@ -1,4 +1,6 @@
-### Transfer String Kernel for Cross-Context DNA-Protein Binding Prediction 
+### Transfer String Kernel 
+
+Reference Paper: [Transfer String Kernel for Cross-Context DNA-Protein Binding Prediction](https://arxiv.org/abs/1609.03490)
 
 Running the Matlab Code:
 
